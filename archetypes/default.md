@@ -1,6 +1,10 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-draft: true
+draft: false
+lastmod: {{ .Date }}
+tags: []
+categories: []
+author: "王圣"
 ---
 
