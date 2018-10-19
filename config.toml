@@ -122,6 +122,12 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
     repo = ""               # The repo to store comments
     clientId = ""           # Your client ID
     clientSecret = ""       # Your client secret
+	
+  [params.comment]           # comment is a comment system based on GitHub issues. see https://github.com/gitalk/gitalk
+    owner = "liewmanchoi"              # Your GitHub ID
+    repo = "blog"               # The repo to store comments
+    clientId = "60d87cf6ad4316b590f9"           # Your client ID
+    clientSecret = "7e037ca04d4934e932616acd3e3b0bfa7f28a067"       # Your client secret
 
   [params.flowchartDiagrams]# see https://blog.olowolo.com/example-site/post/js-flowchart-diagrams/
     enable = false
