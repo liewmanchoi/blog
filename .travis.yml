@@ -20,7 +20,6 @@ deploy:
         branch: master
     local_dir: public
     repo: liewmanchoi/liewmanchoi.github.io
-    fqdn: liewmanchoi.github.io
     target_branch: master
     email: liewmanchoi@gmail.com
     name: liewmanchoi
