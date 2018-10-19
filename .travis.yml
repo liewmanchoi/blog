@@ -1,15 +1,17 @@
 sudo: true
-language: go
-git:
-    depth: 1
-install: 
-    - mkdir $HOME/src
-    - cd $HOME/src
-    - git clone https://github.com/gohugoio/hugo.git
-    - cd hugo
-    - go install
+dist: trusty
+language: generic
+
+addons:
+  apt:
+    packages:
+    - snapd
+install:
+  - sudo snap install hugo
+  - export PATH=/snap/bin:$PATH
 script:
-    ‐hugo
+  - hugo --enableGitInfo
+
 deploy:
     provider: pages
     skip_cleanup: true
@@ -22,3 +24,4 @@ deploy:
     target_branch: master
     email: liewmanchoi@gmail.com
     name: liewmanchoi
+    
