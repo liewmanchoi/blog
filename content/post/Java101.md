@@ -16,7 +16,7 @@ author: "王圣"
 ### 2.数据类型
 * 基本类型primitive type
 	* 整型：`int`（4字节）|`short`（2字节）|`long`（8字节，后缀`L`）|`byte`（1字节）
-	* 浮点型：`float`（4字节，后缀`F`）|`**double**`（8字节，默认不使用后缀，**常用**）
+	* 浮点型：`float`（4字节，后缀`F`）|`double`（8字节，默认不使用后缀，**常用**）
 	* 字符类型：`char`（1字节）
 		* `'A'`表示字符常量
 		* `"A"`表示字符串
@@ -25,7 +25,7 @@ author: "王圣"
 	
 ### 3.变量
 * Java不区分变量的声明和定义
-* 关键字`final #f44336`指示常量，如`final double CM+PER_INCH = 2.54`
+* 关键字`final`指示常量，如`final double CM+PER_INCH = 2.54`
 * 枚举类型：包括有限个命名的值，如`enum Size {SMALL, MEDIUM, LARGE, EXTRA_LARGE};`
 
 ### 4.字符串`String`：`不可变对象`
@@ -33,7 +33,9 @@ author: "王圣"
 * 当一个字符串使用`+`号与非字符串的值进行拼接时，后者被转换成为字符串。任何一个Java对象都可以通过`toString()`方法转换成字符串
 * 字符串字面值是**不可变**的，因此不能进行修改（底层数据结构添加了`final`修饰符）
 * 检测两个字符串是否相等必须使用String的`equals()` 方法
-	* 不能使用```运算符，这个运算符只能检验两个字符串是否在同一个内存位置上
+	* 不能使用`==`运算符，这个运算符只能检验两个字符串是否在同一个内存位置上
+	
+	
 ```java
 String greeting = "Hello";
 if ("Hello".equals(greeting)) {}
